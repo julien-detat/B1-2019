@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<title>Resilient Web Design—Chapter 4</title>
+<title>Resilient Web Design—Chapitre 4</title>
 <meta name="description" content="Languages" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@adactio" />
@@ -305,101 +305,104 @@ nav a[rel="next"] cite span {
 
 <main>
 
-<h1><span>Chapter 4:</span> Languages</h1>
+<h1><span>Chapitre 4:</span> Langages</h1>
 
-<p>Jon Postel was one of the engineers working on the <abbr>ARPANET</abbr>, the precursor to the internet. He wanted to make sure that the packets—or “datagrams”—being shuttled around the network were delivered in the most efficient way. He came to realise that a lax approach to errors was crucial to effective packet switching.</p>
+<p>Jon Postel était l'un des ingénieurs travaillant sur <abbr>ARPANET</abbr>, le précurseur d’Internet. L'objectif de ses travaux était de trouver le moyen le plus simple et efficace possible de faire parvenir à destination les paquets ou datagrams envoyés sur le réseau.  Il est arrivé à la conclusion qu’une haute tolérance à l’erreur était cruciale si l’on voulait pouvoir échanger des datas de manière efficace.</p>
 
 <figure>
 <amp-img src="images/small/jon-postel.jpg" alt="Jon Postel standing by a hand‐drawn diagram of the early internet." srcset="images/medium/jon-postel.jpg 2x, images/large/jon-postel.jpg 3x" width="400" height="245">
 </amp-img>
 <figcaption>Jon Postel.
-<small>Photograph by Irene Fertik, <abbr>USC</abbr> News Service.</small>
+<small>Photographie de Irene Fertik, <abbr>USC</abbr> News Service.</small>
 <small>Copyright 1994, <abbr>USC</abbr>.</small></figcaption>
 </figure>
 
-<p>If a node on the network receives a datagram that has errors, but is still understandable, then the packet should be processed anyway. Conversely every node on the network should attempt to send well‐formed packets. This line of thinking was enshrined in the Robustness Principle, also known as Postel’s Law:</p>
+<p>Si un noeud sur le réseau reçoit un datagram contenant des erreurs mais néanmoins compréhensible, le paquet doit tout de même être traité. A l’inverse, tous les noeuds du réseau doivent essayer d’envoyer des paquets bien constitués. Cette ligne de pensée fut consacrée par le principe de Robustesse, aussi appelé Loi de Postel :</p>
 
 <blockquote>
-<p>Be conservative in what you send; be liberal in what you accept.</p>
+<p>Soyez conservateur dans ce que vous envoyez; soyez libéral dans ce que vous acceptez.</p>
 </blockquote>
 
-<p>If that sounds familiar, it’s because that’s the way that web browsers deal with <abbr>HTML</abbr> and <abbr>CSS</abbr>. Even if there are errors in the <abbr>HTML</abbr> or <abbr>CSS</abbr>, the browser will still attempt to process the information, skipping over any pieces that it can’t parse.</p>
+<p>Si cela vous dit quelque chose, c’est surement parce que c’est exactement l’attitude des navigateurs web vis à vis du <abbr>HTML</abbr> et <abbr>CSS</abbr>. Même si le <abbr>HTML</abbr> ou <abbr>CSS</abbr> contiennent des erreurs, le navigateur web s’obstinera à traiter les informations en ignorant les éléments qu’il n’arrive pas à analyser.</p>
 
 <section aria-labelledby="declaration">
 
-<h2 id="declaration">Declaration</h2>
+<h2 id="declaration">Déclaration</h2>
 
-<p><abbr>HTML</abbr> and <abbr>CSS</abbr> are both examples of declarative languages. An author writing in a declarative language describes a desired outcome without providing step‐by‐step instructions to the computer processing the file. With <abbr>HTML</abbr>, you can describe the nature of the content—paragraphs, headings, form fields, etc.—without having to explain exactly what the browser should do with that information. With <abbr>CSS</abbr>, you can describe the desired appearance of the content—colours, borders, etc.—without having to write a program to apply those styles.</p>
+<p><abbr>HTML</abbr> et <abbr>CSS</abbr> sont tout les deux des exemples de langages déclaratifs. Un auteur écrivant dans un language déclaratif décrit un résultat souhaité sans fournir les instructions étape par étape à l’ordinateur qui traite le fichier. Avec <abbr>HTML</abbr>,  vous pouvez décrire la nature du contenu, des paragraphes, des titres, des champs de formulaire, etc; sans avoir à expliquer exactement ce que le navigateur doit faire avec ces informations. Le <abbr>CSS</abbr> quant à lui, vous permet de décrire l’apparence désirée du contenu; les couleurs, les bordures, etc; sans avoir à écrire un programme pour appliquer ces styles.</p>
 
-<p>Most programming languages are not declarative, they are imperative. Perl, Java, C++ …these are all examples of imperative languages. If you’re writing in one of those languages, you must provide precise instructions to the computer interpreting your code.</p>
+<p>La plupart des langages ne sont pas déclaratifs, ils sont impératifs. Perl, Java, C++… Sont autant d’exemples de langages impératifs. Si vous écrivez dans l’un de ces langages, vous devez fournir des instructions précises à l’ordinateur qui interprétera votre code.</p>
 
-<p>Imperative languages provide you with more power and precision than declarative languages. That comes at a price. Imperative languages tend to be harder to learn than declarative languages. It’s also harder to apply Postel’s Law to imperative languages. If you make a single mistake—one misplaced comma or semi‐colon—the entire program may fail. A misspelt tag in <abbr>HTML</abbr> or a missing curly brace in <abbr>CSS</abbr> can also cause headaches, but imperative programs must be well‐formed or they won’t run at all.</p>
+<p>Si les langages impératifs vous donnent plus de puissance et de précision que les langages déclaratifs, cet avantage a un prix. Les langages impératifs ont tendance à être plus difficiles à apprendre que les langages déclaratifs. C’est aussi plus compliqué d’y appliquer la Loi de Postel. Une seule erreur; virgule ou un point-virgule mal placé; et c’est le programme entier qui peut échouer. Si, Un élément mal orthographié en <abbr>HTML</abbr> ou une accolade manquante en <abbr>CSS</abbr> peut causer des maux de tête, les programmes impératifs quant à eux doivent absolument être bien formés ou ils ne fonctionneront pas du tout.</p>
 
-<p>Imperative languages such as <abbr>PHP</abbr>, Ruby, and Python can be found on the servers powering the World Wide Web, reading and writing database records, processing input, and running complex algorithms. You can choose just about any programming language you want when writing server‐side code. Unlike the unknowability of the end user’s web browser, you have control over your server’s capabilities.</p>
+<p>Les langages impératifs tels que <abbr>PHP</abbr>, Ruby et Python sont les langages communément utilisé sur le World Wide Web, lisant et écrivant les enregistrements des bases de données, traitant des entrées, et éxécutant des algorithmes complexes.
+Dès lors que vous écrivez du côté du serveur, vous pouvez choisir le langage de programmation. Si vous ne pouvez pas connaître l’identité de l’utilisateur final du navigateur, vous pouvez contrôler les capacités de votre serveur.</p>
 
-<p>If you want to write imperative code that runs in a web browser, you only have one choice: JavaScript.</p>
+<p>Si vous voulez utiliser un code impératif fonctionnant sur un navigateur web, Javascript est votre unique option.</p>
 
 </section>
 
 <section aria-labelledby="scripting">
 
-<h2 id="scripting">Scripting</h2>
+<h2 id="scripting">Scriptage</h2>
 
-<p>The idea of executing a program from within a web page is as old as the web itself. Here’s an early email to the www‐talk mailing list:</p>
-
-<blockquote>
-<p>I would like to know, whether anybody has extended <abbr>WWW</abbr> such, that it is possible to start arbitrary programs by hitting a button in a <abbr>WWW</abbr> browser.</p>
-</blockquote>
-
-<p>Tim Berners‐Lee, creator of the World Wide Web, responded:</p>
+<p>L’idée d’exécuter un programme depuis l’intérieur d’une page web est aussi vieille que le web lui-même. Voici un e-mail provenant d’une discussion sur le www:</p>
 
 <blockquote>
-<p>Very good question. The problem is that of programming language. You need something really powerful, but at the same time ubiquitous. Remember a facet of the web is universal readership. There is no universal interpreted programming language.</p>
+<p>Je voudrais savoir, si oui ou non quelqu’un a élargi <abbr>WWW</abbr> de façon qu’il serait possible de démarrer des programmes arbitrairement en appuyant un bouton dans le navigateur web.</p>
 </blockquote>
 
-<p>That was in 1992. The universal interpreted programming language finally arrived in 1996. It was written in ten days by a programmer at Netscape named Brendan Eich.</p>
+<p>Auquel Tim Berners-Lee, le créateur du World Wide Web, a répondu :</p>
 
-<p>The language went through a few name changes. First it was called Mocha. Then it was officially launched as LiveScript. Then the marketing department swept in and renamed it JavaScript, hoping that the name would ride the wave of hype associated with the then‐new Java language. In truth, the languages have little in common. Java is to JavaScript as ham is to hamster.</p>
+<blockquote>
+<p>Très bonne question. Le problème est le langage de programmation. Vous avez besoin de quelque chose de vraiment puissant, mais en même temps omniprésent. Rappelez vous qu’une facette du web est un lectorat universel. Or il n’existe pas de langage de programmation universel.</p>
+</blockquote>
+
+<p>C’était en 1992. 4 ans plus tard, le premier langage de programmation universel apparu en 1996. Il fut écrit en 10 jours par un programmeur de Netscape nommé Brendan Eich.</p>
+
+<p>Le langage a changé plusieurs fois de noms. D’abord appelé Mocha, puis officiellement lancé sous le nom de LiveScript.
+Finalement, le département marketing décida de le renommer Javascript, en espérant que le nom surferait sur la vague de battage médiatique provoquée par le nouveau langage Java. Mais, ces langages n’ont rien en commun. Java est à JavaScript comme jambon est à hamster.</p>
 
 </section>
 
 <section aria-labelledby="patternsofprogress">
 
-<h2 id="patternsofprogress">Patterns of progress</h2>
+<h2 id="patternsofprogress">Les modèles de progrès</h2>
 
-<p>JavaScript gave designers the power to update web pages even after they had loaded. Two common uses soon emerged: rollovers and form validation.</p>
+<p>JavaScript a permis aux web designers de modifier les pages web après leur publication. Rapidement, deux façons de procéder sont apparues : les renversements et la validation de formulaire.</p>
 
-<p>Swapping out images when someone hovers their cursor over a link might not seem like a sensible use of a brand new programming language, but back in the nineties there was no other way of creating hover effects.</p>
+<p>Si aujourd’hui afficher des images lors du survol d’un lien peut sembler être un usage impertinent d’un langage de programmation, dans les années 90, il n’y avait pas d’autre moyen de créer un effet de survol.</p>
 
-<p>Before JavaScript came along, a form would have to be submitted to a web server before you could check to make sure that all the required fields were filled in, or that the information that was entered corresponded to an expected format.</p>
+<p>Avant Javascript, un formulaire devait être envoyé à un serveur web pour s’assurer que tous les champs obligatoires étaient remplis, ou que les informations entrées correspondaient au format demandé.</p>
 
-<p>Both of those use cases still exist, but now there’s no need to reach for JavaScript. You can create rollover effects using the <code>:hover</code> pseudo‐class in <abbr>CSS</abbr>. You can validate form fields using the <code class="markup attribute">REQUIRED</code> and <code class="markup attribute">TYPE</code> attributes in <abbr>HTML</abbr>.</p>
+<p>C’est encore le cas aujourd’hui, mais nous n’avons plus besoin de JavaScript. On peut créer des effets de renversements en utilisant la pseudo-classe css : hover. On peut aussi valider les champs de formulaire en utilisant les éléments html <code class="markup attribute">REQUIRED</code> et <code class="markup attribute">TYPE</code>.</p>
 
-<p>That’s a pattern that repeats again and again: a solution is created in an imperative language and if it’s popular enough, it migrates to a declarative language over time. When a feature is available in a declarative language, not only is it easier to write, it’s also more robust.</p>
+<p>Encore et encore, ce schéma se reproduit : une solution est créée dans un langage impératif et si elle devient assez populaire, ce n’est qu’une question de temps avant de la voir migrer vers un langage déclaratif. Quand une fonctionnalité est disponible dans un langage déclaratif, c’est non seulement facile à écrire mais aussi plus robuste.</p>
 
-<p>The loose error‐handling of <abbr>HTML</abbr> and <abbr>CSS</abbr> means that any authoring mistakes or browser support issues are handled gracefully; the browser simply ignores what it doesn’t understand and carries on. That’s often good enough. By contrast, if you give a browser some badly‐formed JavaScript or attempt to use an unsupported JavaScript feature, not only will the browser throw an error, it will stop parsing the script at that point and refuse to go any further.</p>
+<p>La haute tolérance aux erreurs <abbr>HTML</abbr> et <abbr>CSS</abbr> signifie que beaucoup d’erreurs de création ou problèmes de support du navigateur sont laissées de côté; le navigateur ignore simplement ce qu’il ne comprend pas et poursuit son analyse. C’est souvent assez bon. En revanche, si vous donnez à un navigateur un code JavaScript mal formé ou tentez d’utiliser un élément qu’il ne supporte pas, non seulement le navigateur affichera une erreur, mais il s’arrêtera d’analyser le script et refusera d’aller plus loin.</p>
 
 </section>
 
 <section aria-labelledby="responsibility">
 
-<h2 id="responsibility">Responsibility</h2>
+<h2 id="responsibility">Responsabilité</h2>
 
-<p>JavaScript gave web designers the power to create websites that were slicker, smoother, and more reactive. The same technology also gave web designers the power to create websites that were sluggish, unwieldy, and more difficult to use.</p>
+<p>JavaScript donne aux designers web le pouvoir de créer des sites lisses, fluides, et plus réactifs. Mais elle leur donne aussi la possibilité de créer des sites lents, lourd et plus difficile à utiliser.</p>
 
-<p>One of the earliest abuses of JavaScript came (unsurprisingly) from the advertising industry, a business whose very raison d’être is often at odds with the goals of people trying to achieve a task as quickly as possible. JavaScript allows you to create new browser windows, something that previously could only be done by the user. A young developer named Ethan Zuckerman realised that he could spawn a new window with an advertisement in it. That allowed advertisers to put their message in front of website visitors. Not only that, but JavaScript could be used to spawn multiple windows, some of them visible, some of them hidden behind the current window. It was a fiendish solution.</p>
+<p>L’un des premier abus de Javascript surgi (sans surprise) du secteur de l’industrie, un business dont la raison d’être détonne souvent avec les objectifs de ceux essayant d’achever une tâche le plus rapidement possible. JavaScript vous permet d’ouvrir des nouvelles fenêtres dans un navigateur, une tâche qui incombait auparavant à l’utilisateur. Un jeune développeur nommé Ethan Zuckerman a découvert qu’il pourrait engendrer une nouvelle fenêtre contenant une publicité dans celle-ci. Cela a permis aux publicitaires de diffuser leurs annonces aux visiteurs du site web. En plus de cela, JavaScript peut être utilisé pour afficher plusieurs fenêtres, certaines visibles, d’autres cachées derrière la fenêtre active. C’était une solution diabolique.</p>
 
-<p>Twenty years later, Zuckerman wrote:</p>
+<p>20 ans plus tard, Zuckerman écrit :</p>
 
 <blockquote>
-<p>I wrote the code to launch the window and run an ad in it. I’m sorry.</p>
+<p>Je suis celui qui a écrit le code pour lancer une fenêtre contenant une publicité.
+J’en suis désolé.</p>
 </blockquote>
 
-<p>Pop‐up (and pop‐under) windows became so intolerable that browsers had to provide people with a means to block them.</p>
+<p>Les fenêtres pop-up (et pop-under) sont devenues tellement intolérables que les navigateurs ont dû fournir aux personnes un moyen de les bloquer.</p>
 
-<p>The advertising industry later found other ways to abuse JavaScript. Ad‐supported online publishers injected bloated and inefficient JavaScript into their pages, making them slow to load. JavaScript was also used to track people from site to site. People reached for ad‐blocking software to combat this treatment. Eventually ad blocking was built into browsers and operating systems to give us the ability to battle excessive JavaScript.</p>
+<p>Mais le secteur de la publicité a trouvé d’autres moyens de détourner l’usage de javascript à son avantage. Les éditeurs en ligne bénéficiaient d’un soutien publicitaire et injectèrent du JavaScript inefficace sur leurs pages, ce qui les rendait plus lents à charger. JavaScript était aussi utilisé pour traquer les gens d’un site à un autre. Les gens ont donc commencé à recourir à un logiciel pour combattre ce fléau. Finalement, le blocage de publicité fut ajouté dans les navigateurs et les systèmes d’exploitation pour nous permettre de lutter contre l’excès de JavaScript.</p>
 
-<p>Web designers would do well to remember what the advertising industry chose to ignore: on the web, the user has the final say.</p>
+<p>Les designers web feraient bien de se rappeler ce que l’industrie de la publicité a choisi d’ignorer: sur le web, l’utilisateur a le dernier mot.</p>
 
 </section>
 
