@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html amp lang="en">
+<html amp lang=fr>
 <head>
 <meta charset="utf-8" />
 <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -305,7 +305,7 @@ nav a[rel="next"] cite span {
 
 <main>
 
-<h1><span>Chapitre 5:</span> Layers</h1>
+<h1><span>Chapitre 5:</span> Couches</h1>
 
 <p>Dans son livre <cite>How Buildings Learn</cite> , Stewart Brand souligne une idée de Franck Duffy, un architecte Britannique:
 
@@ -330,7 +330,7 @@ nav a[rel="next"] cite span {
 <figure>
 <amp-img src="images/small/shearing-layers.jpg" alt="A diagram of a house." srcset="images/medium/shearing-layers.jpg 2x, images/large/shearing-layers.jpg 3x" width="400" height="300">
 </amp-img>
-<figcaption>Shearing layers.</figcaption>
+<figcaption>Couches de cisaillement.</figcaption>
 </figure>
 
 <p>L’idée des couches de cisaillement peut aussi être appliquée à nos créations sur le web. Nos noms de domaines sont les sites géologique sur lesquels nous construisons. À l’autre extrémité de l’échelle de temps, le contenu sur le Web —les « choses »—peut être ajouté et mis à jour dans l’heure, la minute, ou même la seconde. Entre les couches il y a des couches de structure, présentations et comportements:
@@ -342,7 +342,7 @@ nav a[rel="next"] cite span {
 <p>Dans un autre livre, <cite>The Clock Of The Long Now</cite>, Stewart Brand applique l’idée des couches de cisaillement—ou couches progressive—à la civilisation elle-même. La couche qui se déplace le plus lentement est la nature, puis il y a la culture, suivie par le gouvernement, puis les infrastructures, enfin le commerce et la mode sont les couches les plus rapides. Dans cette organisation, chaque couche dépend de la couche inférieure. À son tour, l’accumulation de chaque couche successive permet un «possible adjacent» rempli de plus d’opportunités.
 </p>
 
-<p>LDe même, l’expressivité de <abbr>CSS</abbr> et JavaScript est seulement rendue possible sur une base de  <abbr>HTML</abbr>, qui elle même requiert qu’une<abbr>URL</abbr> soit accessible, laquelle dépend à son tour du protocole de transfert HyperText, qui repose sur le socle fondamental de <abbr>TCP/IP</abbr>.</p>
+<p>De même, l’expressivité de <abbr>CSS</abbr> et JavaScript est seulement rendue possible sur une base de  <abbr>HTML</abbr>, qui elle même requiert qu’une<abbr>URL</abbr> soit accessible, laquelle dépend à son tour du protocole de transfert HyperText, qui repose sur le socle fondamental de <abbr>TCP/IP</abbr>.</p>
 
 <p>Chacune des couches de cisaillement de la bande peut être décollée pour en révéler une autre. Exécuter ce processus en sens inverse - en appliquant chaque couche à la fois - est un principe clé d’une conception résistante du web.
 </p>
@@ -373,9 +373,7 @@ Amélioration progressive</h2>
 
 <h2 id="dowebsitesneedtolookexactlythesameineverybrowser">Les sites web doivent-ils avoir exactement la même apparence dans tous les navigateurs?</h2>
 
-<p>
-Certains concepteurs de sites Web craignaient que l'amélioration progressive soit une camisole pour la créativité. Concevoir le plus petit dénominateur commun ne sonnait pas comme une recette de progrès. Mais c'était un malentendu. L’amélioration progressive demande aux concepteurs de 
-<em>commencer</em> par le plus petit dénominateur commun (un document bien annoté), mais il n’y a pas de limite à ce qu’ils peuvent faire à partir de là.</p>
+<p>Certains concepteurs de sites Web craignaient que l'amélioration progressive soit une camisole pour la créativité. Concevoir le plus petit dénominateur commun ne sonnait pas comme une recette de progrès. Mais c'était un malentendu. L’amélioration progressive demande aux concepteurs de <em>commencer</em> par le plus petit dénominateur commun (un document bien annoté), mais il n’y a pas de limite à ce qu’ils peuvent faire à partir de là.</p>
 
 <p>En fait, c'est la présence même d'une solide base de code <abbr>HTML</abbr> qui permet aux concepteurs Web d'expérimenter les <abbr>CSS</abbr>les plus récents et les plus performantes. Grâce à la loi de Postel et au modèle de traitement des erreurs de <abbr>CSS</abbr>, les concepteurs sont libres d'appliquer des styles qui ne fonctionnent que dans les navigateurs les plus récents.
 </p>
@@ -393,79 +391,80 @@ Certains concepteurs de sites Web craignaient que l'amélioration progressive so
 
 <section aria-labelledby="cuttingthemustard">
 
-<h2 id="cuttingthemustard">Cutting the mustard</h2>
+<h2 id="cuttingthemustard">Couper la moutarde</h2>
 
-<p>Separating structure and presentation is relatively straightforward. You can declare whatever styles you want, safe in the knowledge that browsers will ignore what they don’t understand. Separating structure and behaviour isn’t quite so easy. If you give a browser some JavaScript that it doesn’t understand, not only will it not apply the desired behaviour, it will refuse to parse the rest of the JavaScript.</p>
+<p>Séparer la structure et la présentation est relativement simple. Vous pouvez déclarer tous les styles que vous voulez, tout en sachant que les navigateurs vont ignorer les choses qu’ils ne comprennent pas. Séparer la structure et le comportement n’est en revanche pas si simple. Si vous donner du JavaScript que ne comprends pas votre navigateur, il n’affichera pas d’une part le comportement désiré, mais il refusera aussi d’analyser le reste du JavaScript.</p>
 
-<p>Before you use a particular feature in JavaScript, it’s worth testing to see if that feature is supported. This kind of feature detection can save your website’s visitors from having a broken experience because of an unsupported feature. If you want to use Ajax, check first that the browser supports the object you’re about to use to enable that Ajax functionality. If you want to use the geolocation <abbr>API</abbr>, check first that the browser supports it.</p>
+<p>Avant d’utiliser une fonctionnalité particulière de JavaScript, il vaut mieux s’assurer que celle-ci est supportée dans le navigateur. Cette vérification des fonctionnalités peut épargner aux visiteurs d’avoir une mauvaise expérience de navigation sur votre site internet suite à une fonctionnalité non-supportée. Si vous voulez utiliser Ajax, vérifiez d’abord que votre navigateur supporte l’objet que vous vous apprêter à utiliser pour activer cette fonctionnalité. Si vous voulez utiliser la géolocalisation <abbr>API</abbr>, vérifiez que votre navigateur la supporte.</p>
 
-<p>A team of web developers working on the <abbr>BBC</abbr> news website referred to this kind of feature detection as cutting the mustard. Browsers that cut the mustard get an enhanced experience. Browsers that don’t cut the mustard still get access to the content, but without the JavaScript enhancements.</p>
+<p>Une équipe de développeurs web travaillant sur le site internet de la <abbr>BBC</abbr>  a surnommé ce type de détection de fonctionnalité par le fait de « couper la moutarde ». Les navigateurs qui « coupent la moutarde » obtiennent une expérience améliorée. Les navigateurs qui ne « coupent pas la moutarde » ont quant à eux toujours accès au contenu, mais sans les améliorations de JavaScript.</p>
 
-<p>Feature detection, cutting the mustard, whatever you want to call it, is a fairly straightforward technique. Let’s say you want to traverse the <abbr>DOM</abbr> using <code>querySelector</code> and attach events to some nodes in the document using <code>addEventListener</code>. Your mustard‐cutting logic might look something like this:</p>
+<p>La détection de fonctionnalité, couper la moutarde, ou comme vous voudrez l’appelez, est une technique simple. Disons que vous voulez traverser le <abbr>DOM</abbr> en utilisant <code>querySelector</code> et en attachant des évènements à quelques nœuds dans le document en utilisant <code>addEventListener</code>. Votre logique de couper la moutarde ressemblerait à quelque chose comme ça :</p>
 
 <pre><code>if (document.querySelector &amp;&amp; window.addEventListener) {
     // Enhance!
 }</code></pre>
 
-<p>There are two points to note here:</p>
+<p>Il y a deux choses à noter ici :</p>
 
 <ol>
-<li>This is feature detection, not browser detection. Instead of asking “which browser are you?” and trying to infer feature support from the answer, it is safer to simply ask “do you support this feature?”</li>
-<li>There is no <code>else</code> statement.</li>
+<li>Il s’agit d’une détection des fonctionnalités, pas de la détection du navigateur. À la place de demander « quel navigateur es-tu ? » et d’essayer d’en traduire le support à utiliser grâce à la réponse, il est plus simple de demander « est-ce que tu supportes cette fonctionnalité ? »</li>
+<li>Il n’y a pas <code>d’autres</code> déclarations.</li>
 </ol>
 
 </section>
 
 <section aria-labelledby="aggressiveenhancement">
 
-<h2 id="aggressiveenhancement">Aggressive enhancement</h2>
+<h2 id="aggressiveenhancement">Amélioration agressive</h2>
 
-<p>Back when web designers were trying to exert print‐like control over web browsers, a successful design was measured in pixel perfection: did the website look exactly the same in every browser?</p>
+<p>Retour à l’époque où les designers web essayaient d’exercer un contrôle semblable à l’impression sur les navigateurs internet, un design réussi se mesurait au pixel prêt: est-ce que le site internet à le même aspect sur tous les navigateurs ?</p>
 
-<p>Unless every browser supported a particular feature—like, say, rounded corners in <abbr>CSS</abbr>—then that feature was off the table. Instead, designers would fake it with extra markup and images. The resulting websites lacked structural honesty. Not only was this a waste of talent and energy on the part of the designers, it was a waste of the capabilities of modern web browsers.</p>
+<p>À moins que tous les navigateurs supportaient cette fonctionnalité particulière-comme par exemple, les angles arrondis en <abbr>CSS</abbr>— alors cette fonctionnalité n’était pas discutable. À la place, les designers essayeraient de la cacher avec des balises et des images supplémentaires. Les sites web qui en résultaient manquaient d’une vraie structure. Il ne s’agissait non pas seulement d’un gaspillage du talent et de l’énergie venant des designers, c’était aussi un gaspillage des capacités des navigateurs internet modernes.
+</p>
 
-<p>The rise of mobiles, tablets, and responsive design helped to loosen this restrictive mindset. It is no longer realistic to expect pixel‐perfect parity across devices and browsers. But you’ll still find web designers bemoaning the fact that they have to support an older outdated browser because a portion of their audience are still using it.</p>
+<p>L’augmentation des téléphones mobiles, des tablettes, et du design responsif a aidé à perdre cet état d’esprit fermé. Ce n’est plus réaliste d’excepter une égalité parfaite des pixels entre les appareils et les navigateurs. Mais vous continuerez à trouver des designers web se plaindre du fait qu’ils aient à supporter un vieux navigateur dépassé car une portion de leur audience continue à l’utiliser.</p>
 
-<p>They’re absolutely right. Anyone using that older browser should have access to the same content as someone using the latest and greatest web browser. But that doesn’t mean they should get the same experience. As Brad Frost puts it:</p>
-
-<blockquote>
-<p>There is a difference between support and optimization.</p>
-</blockquote>
-
-<p><em>Support</em> every browser ...but <em>optimise</em> for none.</p>
-
-<p>Some designers have misunderstood progressive enhancement to mean that <em>all</em> functionality must be provided to <em>everyone</em>. It’s the opposite. Progressive enhancement means providing <em>core</em> functionality to everyone. After that, it’s every browser for itself. Far from restricting what features you can use, progressive enhancement provides web designers with a way to safely use the latest and greatest features without worrying about older browsers. Scott Jehl of the agency Filament Group puts it succinctly:</p>
+<p>Et ils ont absolument raison. Toute personne utilisant un vieux navigateur devrait avoir accès au même contenu qu’une personne utilisant le dernier des meilleurs navigateurs web. Mais cela ne veut pas dire qu’ils devraient avoir la même expérience. Comme Brad Frost a dit :</p>
 
 <blockquote>
-<p>Progressive Enhancement frees us to focus on the costs of building features for modern browsers, without worrying much about leaving anyone out. With a strongly qualified codebase, older browser support comes nearly for free.</p>
+<p>Il y a une différence entre le support et l’optimisation.</p>
 </blockquote>
 
-<p>If a website is built using progressive enhancement then it’s okay if a particular feature isn’t supported or fails to load: Ajax, geolocation, whatever. As long as the core functionality is still available, web designers don’t need to bend over backwards trying to crowbar support for newer features into older browsers.</p>
+<p><em>Supporter</em> tous les navigateurs... mais <em>optimiser</em> pour aucun.</p>
 
-<p>You also get a website that’s more resilient to JavaScript’s error‐handling model. Mat Marquis worked alongside Scott Jehl on the responsive website for the Boston Globe. He noted:</p>
+<p>Certains designers ont mal compris le fait que l’amélioration progressive voulait dire que <em>toutes</em> les fonctionnalités devaient être fournies à <em>tous</em>. C'est le contraire. L’amélioration progressive signifie fournir <em> les principales</em> fonctionnalités à tout le monde. Après cela, c’est le navigateur qui fait le reste. Loin de limiter les fonctionnalités que vous pouvez utiliser, l'amélioration progressive fournit aux designers web un moyen d'utiliser en toute sécurité les fonctionnalités les plus récentes et les plus performantes sans se soucier des anciens navigateurs. Scott Jehl de l'agence Filament Group le dit succinctement :</p>
 
 <blockquote>
-<p>Lots of cool features on the Boston Globe don’t work when <abbr>JS</abbr> breaks; “reading the news” is not one of them.</p>
+<p>L’amélioration progressive nous permet de nous concentrer sur les coûts de créations des fonctionnalités pour les navigateurs modernes, sans trop se soucier du fait de laisser des gens de côté. Avec une code base fortement qualifiée, la prise en charge des anciens navigateurs est quasiment gratuite.</p>
 </blockquote>
 
-<p>The trick is identifying what is considered core functionality and what is considered an enhancement.</p>
+<p>Si un site internet est construit en utilisant l’amélioration progressive alors c’est ok si une fonctionnalité particulière n’est pas supportée ou échoue au chargement : Ajax, géolocalisation, quoi que ce soit. Tant que les fonctionnalités de base sont toujours disponibles, les designers web n’ont pas besoin de rebrousser chemin pour essayer de faire passer de force de nouvelles fonctionnalités dans d’anciens navigateurs.</p>
+
+<p>Vous obtenez également un site Web plus résistant au modèle de traitement des erreurs de JavaScript. Mat Marquis a travaillé avec Scott Jehl sur le site internet responsif du Boston Globe. Il a noté :</p>
+
+<blockquote>
+<p>Un grand nombre de fonctionnalités cools sur le Boston Globe ne fonctionnent plus lorsque <abbr>JS</abbr> s'arrête; “reading the news” n’en fait pas parti.</p>
+</blockquote>
+
+<p>L'astuce consiste à identifier ce qui est considéré comme une fonctionnalité principale et ce qui est considéré comme une amélioration.</p>
 
 </section>
 
 <aside>
-<h2>References</h2>
+<h2>Références</h2>
 <ol>
-<li><a href="http://www.hesketh.com/publications/inclusive_web_design_for_the_future/"><cite>Inclusive Web Design For the Future with Progressive Enhancement</cite></a> by Steven Champeon and Nick Finck</li>
-<li><a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/"><cite>Do websites need to look exactly the same in every browser?</cite></a> by Dan Cederholm</li>
-<li><a href="http://bradfrost.com/blog/mobile/support-vs-optimization/"><cite>Support <abbr>vs</abbr> Optimization</cite></a> by Brad Frost</li>
-<li><a href="https://the-pastry-box-project.net/scott-jehl/2014-march-7"><cite>The Pastry Box</cite></a> by Scott Jehl</li>
+<li><a href="http://www.hesketh.com/publications/inclusive_web_design_for_the_future/"><cite>Inclusive Web Design For the Future with Progressive Enhancement</cite></a> par Steven Champeon and Nick Finck</li>
+<li><a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/"><cite>Do websites need to look exactly the same in every browser?</cite></a> par Dan Cederholm</li>
+<li><a href="http://bradfrost.com/blog/mobile/support-vs-optimization/"><cite>Support <abbr>vs</abbr> Optimization</cite></a> par Brad Frost</li>
+<li><a href="https://the-pastry-box-project.net/scott-jehl/2014-march-7"><cite>The Pastry Box</cite></a> par Scott Jehl</li>
 </ol>
 </aside>
 
 </main>
 
 <nav>
-<a href="../chapter6/amp.html" rel="next"><cite><span>Chapter 6:</span> Steps</cite></a>
+<a href="../chapter6/amp.html" rel="next"><cite><span>Chapitre 6:</span> Étapes</cite></a>
 </nav>
 
 <amp-install-serviceworker src="../serviceworker.js" data-iframe-src="https://resilientwebdesign.com/iframe.html" layout="nodisplay">
