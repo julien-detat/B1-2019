@@ -410,11 +410,11 @@ J’en suis désolé.</p>
 
 <h2 id="2.0">2.0</h2>
 
-<p>The rise of JavaScript was boosted in 2005 with the publication of an article entitled <cite>Ajax: A New Approach to Web Applications</cite> by Jesse James Garrett. The article put a name to a technique that was gaining popularity. Using a specific subset of JavaScript, it was possible for a web browser to send and receive data from a web server without refreshing the whole page. The result was a smoother user experience.</p>
+<p>La montée en puissance du JavaScript s’est intensifiée en 2005 avec la publication d’un article écrit par Jesse James Garrett intitulé <cite>Ajax: A New Approach to Web Applications</cite>. L’article donne un nom à une technique qui gagnait en popularité.En utilisant un sous-ensemble spécifique du JavaScript, il était possible pour un navigateur web d’envoyer et de recevoir des données provenant d’un serveur web sans avoir à rafraîchir la page entière. Le résultat fut une expérience utilisateur plus fluide.</p>
 
-<p>The term Ajax was coined at the same time that another neologism was in the ascendent. Tim O’Reilly used the phrase Web 2.0 to describe a new wave of web products and services. Unlike Ajax, it was difficult to pin down a definition of Web 2.0. For business people, it meant new business models. For graphic designers, it meant rounded corners and gradients. For developers, it meant JavaScript and Ajax.</p>
+<p>Le terme d’Ajax a été inventé en même temps qu’un autre néologisme devenait populaire. Tim O’Reilly utilise l’expression “Web 2.0” pour décrire une nouvelle vague de produits et de services du Web. Contrairement à Ajax, il était difficile d’établir une définition du Web 2.0. Pour les hommes d’affaires, cela annonçait de nouveaux modèles d’affaires. Pour les graphistes, cela signifiait des angles arrondis et dégradés. Pour les développeurs, cela voulait dire JavaScript et Ajax.</p>
 
-<p>Whatever its exact meaning, the term Web 2.0 captured a mood and a feeling. Everything was going to be different now. The old ways of thinking about building for the web could be cast aside. Treating the web as a limitless collection of hyperlinked documents was passé. The age of web apps was at hand.</p>
+<p>Quelle que soit sa signification exacte, le terme Web 2.0 traduit une émotion et un sentiment. Tout était sur le point de changer. Les anciennes façons de travailler le web pourraient être mise de côté. Traiter le Web comme une collection illimitée de documents en hyperlien était quelque chose du passé. L’âge des applications web était à portée de main.</p>
 
 </section>
 
@@ -422,82 +422,82 @@ J’en suis désolé.</p>
 
 <h2 id="appiness">Appiness</h2>
 
-<p>In the 1964 supreme court case Jacobellis versus Ohio, Justice Potter Stewart provided this definition of obscenity:</p>
+<p>Lors de l’affaire Jacobellis contre l’Ohio, en 1964, le juge Potter Stewart définit l’obscénité de la façon suivante:</p>
 
 <blockquote>
-<p>I know it when I see it.</p>
+<p>Je la reconnaît quand je la vois.</p>
 </blockquote>
 
-<p>The same could be said for Web 2.0, or for the term “web app.” We can all point to examples of web apps, but it’s trickier to provide a definition for the term. Web apps allow people to create, edit, and delete content. But these tasks were common long before web apps arrived. People could fill in forms and submit them to a web server for processing. Ajax removed the necessity for that round trip to the server.</p>
+<p>Ceci est applicable au web 2.0, ou pour le terme de “web app” (application web). Nous pouvons tous citer des exemples d'applications Web, mais il est plus délicat de fournir une définition du terme. Les applications web permettent aux utilisateurs de créer, modifier, et supprimer du contenu. Mais ces tâches étaient communes bien avant que les applications web arrivent. Les gens pouvaient remplir un formulaire et le soumettre à un serveur web pour qu’il le traite. Ajax a enlevé la nécessité de ce voyage aller-retour vers le serveur.</p>
 
-<p>Perhaps the definition of a web app requires some circular reasoning:</p>
+<p>Peut-être que la définition d’une application web nécessite un raisonnement circulaire:</p>
 
 <ul>
-<li>JavaScript is a requirement for a web app, and</li>
-<li>a web app is a website that requires JavaScript to work.</li>
+<li>JavaScript est nécessaire à une application Web, et</li>
+<li>une application Web est un site Web qui nécessite JavaScript pour fonctionner.</li>
 </ul>
 
-<p>In that case, building web apps depends on a fundamental assumption: JavaScript must be available and reliable. But because of its imperative nature, JavaScript tends to be more fragile than a declarative language like <abbr>HTML</abbr>. Relying on JavaScript might not be such a safe assumption after all.</p>
+<p>Dans ce cas, la construction d’applications web dépend d’une hypothèse fondamentale: JavaScript doit être accessible et fiable. Mais à cause de sa nature impérative, JavaScript à tendance à être plus fragile qu’un langage déclaratif comme le <abbr>HTML</abbr>. Se reposer sur JavaScript pourrait ne semble pas être une hypothèse si sûre que ça en fin de compte.</p>
 
 </section>
 
 <section aria-labelledby="unforgiven">
 
-<h2 id="unforgiven">Unforgiven</h2>
+<h2 id="unforgiven">Impardonable</h2>
 
-<p><abbr>HTML</abbr>’s loose error‐handling allowed it to grow in power over time. It also ensured that the language was easy to learn. Even if you made a mistake, the browser’s implementation of Postel’s Law ensured that you’d still get a result. Surprisingly, there was an attempt to remove this superpower from <abbr>HTML</abbr>.</p>
+<p>La tolérance du<abbr>HTML</abbr> aux erreurs lui a permis de gagner en puissance avec le temps. Cela a également démontré que le langage était facile à apprendre. Même si vous faites une erreur, l’application de la loi de Postel par le navigateur vous garantit de toujours obtenir un résultat. Étonnamment, il y a eu une tentative de supprimer cette superpuissance du <abbr>HTML</abbr>.</p>
 
-<p>After the standardisation of <abbr>HTML</abbr> version 4 in 1999, the World Wide Web Consortium published <abbr>XHTML</abbr> 1.0. This reformulated <abbr>HTML</abbr> according to the rules of the <abbr>XML</abbr> data format. Whereas <abbr>HTML</abbr> can have uppercase or lowercase tag names and attributes, <abbr>XML</abbr> requires them to be all lowercase. There were some other differences: all attributes had to be quoted, and standalone elements like <code class="markup element">IMG</code> or <code class="markup element">BR</code> required a closing slash.</p>
+<p>Après la standardisation du<abbr>HTML</abbr> version 4 en 1999, le World Wide Web Consortium a publié <abbr>XHTML</abbr> 1.0. Cela reformule <abbr>HTML</abbr> en fonction des règles du format de données  <abbr>XML</abbr>. Alors que <abbr>HTML</abbr> peut avoir des noms et des attributs de balises en majuscules ou en minuscules, <abbr>XML</abbr> exige qu’ils soient tous en minuscules. Il y avait d’autres différences: tous les attributs devaient être cités, et les éléments autonomes comme  <code class="markup element">IMG</code> ou <code class="markup element">BR</code> nécessitaient une barre oblique de fermeture.</p>
 
-<p><abbr>XHTML</abbr> 1.0 didn’t add any new features to the language. It was simply a stricter way of writing markup. <abbr>XHTML</abbr> 2.0 was a different proposition. Not only would it remove established elements like <code class="markup element">IMG</code>, it would also implement <abbr>XML</abbr>’s draconian error‐handling model. If there is a single error in an <abbr>XML</abbr> document—one unquoted attribute or missing closing slash—then the parser should stop immediately and refuse to render anything.</p>
+<p><abbr>XHTML</abbr> 1.0 n’a pas ajouté de nouvelles fonctionnalités au langage. C’était simplement une manière plus stricte d’écrire le balisage. <abbr>XHTML</abbr> 2.0 était une proposition différente. Cela supprimerait non seulement les éléments établis <code class="markup element">IMG</code>, mais implémenterait également le modèle draconien de traitement des erreurs de <abbr>XML</abbr>.  S’il existe une seule erreur dans le document <abbr>XML</abbr> (un attribut non cité ou une barre de fermeture manquante), alors l’analyseur doit s’arrêter immédiatement et refuser de rendre quoi que ce soit.</p>
 
-<p><abbr>XHTML</abbr> 2.0 died on the vine. Its theoretical purity was roundly rejected by the people who actually made websites for a living. Web designers rightly refused to publish in a format that would fail completely instead of trying to recover from an error.</p>
+<p><abbr>XHTML</abbr> 2.0 est mort sur le fil. Sa pureté théorique a été catégoriquement rejetée par les créateurs de sites Web. Les designers de sites Web ont à juste titre refusé de publier un format qui échouerait complètement au lieu d’essayer de remédier à une erreur.</p>
 
-<p>Strange then, that years later, web designers would happily create entire websites using JavaScript, a language that shares <abbr>XML</abbr>’s unforgiving error‐handling model. They didn’t call them websites. They called them web apps. That distinction was cold comfort to someone who couldn’t complete their task because a service relied on JavaScript for crucial functionality.</p>
+<p>Étrange alors, que des années plus tard, les concepteurs Web créaient avec joie des sites Web entiers en utilisant JavaScript, un langage qui partage le modèle de traitement d’erreurs impitoyable du <abbr>XML</abbr>. Ils ne les appelaient pas des sites Web. Ils les appelaient des applications Web. Cette distinction réconfortait très mal quelqu’un, qui ne pouvait pas accomplir sa tâche parce qu’un service comptait sur JavaScript pour une fonctionnalité cruciale.</p>
 
-<p>Despite JavaScript’s fragile error‐handling model, web designers became more reliant on JavaScript over time. In 2015, <abbr>NASA</abbr> relaunched its website as a web app. If you wanted to read the latest news of the agency’s space exploration efforts, you first had to download and execute three megabytes of JavaScript. This content—text and images—could have been delivered in the <abbr>HTML</abbr>, but the developers decided to use Ajax to retrieve this data instead. Until all that JavaScript was loaded, parsed, and executed, visitors to the site were left staring at a black background. Perhaps this was intended as a demonstration of the vast lonely emptiness of space.</p>
+<p>Malgré le modèle fragile de traitement des erreurs de JavaScript, les concepteurs Web deviennent de plus en plus dépendants de JavaScript. En 2015, la  <abbr>NASA</abbr> a relancé son site Web en tant qu’application Web. Si vous vouliez lire les dernières actualités des efforts d’exploration spatiale de l’agence, vous deviez d’abord télécharger et exécuter trois mégaoctets de JavaScript. Ce contenu (texte et images) aurait pu être délivré en <abbr>HTML</abbr>, mais les développeurs ont décidé d’utiliser Ajax pour récupérer ces données. Jusqu’à que tout le JavaScript soit chargé, analysé, et exécuté, les visiteurs du site ont été laissés sur un fond noir. Peut-être s'agissait-il d'une démonstration du vaste vide solitaire de l'espace. </p>
 
 <figure>
 <amp-img src="images/small/nasa.png" alt="A web browser showing a black screen." srcset="images/medium/nasa.png 2x, images/large/nasa.png 3x" width="400" height="300">
 </amp-img>
-<figcaption>The 2015 version of the nasa.gov website with incomplete JavaScript.</figcaption>
+<figcaption>La version 2015 du site de la nasa.gouv avec un JavaScript incomplet.</figcaption>
 </figure>
 
-<p>This highlights another difference between <abbr>HTML</abbr> and JavaScript. Whereas <abbr>HTML</abbr> can be rendered piece by piece as it is downloaded, a JavaScript file must be downloaded in its entirety before its contents can be parsed. While it’s tempting to think that only a small minority of visitors will miss out on a site’s JavaScript, the truth is that everybody is a non‐JavaScript user until the JavaScript has finished loading ...<em>if</em> the JavaScript finishes loading. Flaky connections, interfering network operators, and unpredictable ad‐blocking software can torpedo the assumption that JavaScript will always be available.</p>
+<p>Cela souligne une autre différence entre <abbr>HTML</abbr> et JavaScript. Alors que le <abbr>HTML</abbr> peut être rendu pièce par pièce au fur et à mesure de son téléchargement, un fichier JavaScript doit être téléchargé dans son intégralité avant que son contenu ne puisse être analysé. Bien qu’il soit tentant de penser que seulement une petite minorité des visiteurs ratera le code JavaScript d’un site, la vérité est que tout le monde est un non-JavaScript utilisateur jusqu’à que le JavaScript ait fini de charger...<em>si</em> le JavaScript fini de charger. Des connexions instables, des opérateurs de réseau interférents et un logiciel de blocage des annonces imprévisible, peuvent démentir l’hypothèse selon laquelle JavaScript sera toujours disponible.</p>
 
-<p>The problem is not with people deliberately disabling JavaScript in their browsers. Although that’s a use case worth considering, it’s not the most common cause of JavaScript errors. Stuart Langridge put together a list of all the potential points of failure under the title <cite>Everyone has JavaScript, right?</cite></p>
+<p>Le problème n’est pas que les gens désactivent délibérément JavaScript dans leurs navigateurs. Bien que ce soit un cas d’utilisation qui mérite d’être considéré, ce n’est pas la cause la plus fréquente des erreurs JavaScript. Stuart Langridge a dressé une liste de tous les potentiels points d’échecs intitulée <cite>Tout le monde a JavaScript, non?</cite></p>
 
 <blockquote>
-<p>The user requests your web app. Has the page loaded yet? Did the <abbr>HTTP</abbr> request for the JavaScript succeed? Did the <abbr>HTTP</abbr> request for the JavaScript complete? Does the corporate firewall block JavaScript? Does their <abbr>ISP</abbr> or mobile operator interfere with downloaded JavaScript? Have they switched off JavaScript? Do they have add‐ons or plug‐ins installed which inject script or alter the <abbr>DOM</abbr> in ways you didn’t anticipate? Is the Content Delivery Network up? Does their browser support the JavaScript you’ve written?</p>
+<p>L’utilisateur demande votre application Web. La page a-t-elle déjà été chargée? La requête <abbr>HTTP</abbr> pour le JavaScript a-t-elle réussi? La requête <abbr>HTTP</abbr> Est-ce que le  pare-feu de l’entreprise bloque le JavaScript? Est-ce que leur <abbr>FAI</abbr> (Fournisseur d’Accès à Internet) ou leur opérateur de téléphonie mobile interfère avec le code JavaScript téléchargé ? Ont-ils désactivé le JavaScript? Ont-ils des add-ons ou des plug-ins installés qui injectent le script ou qui modifient le <abbr>DOM</abbr> de façon inattendue? Le réseau de diffusion du contenu est-il opérationnel? Est-ce que leur navigateur supporte le JavaScript que vous avez écrit?</p>
 </blockquote>
 
-<p>Many of those problems would also affect <abbr>HTML</abbr> and <abbr>CSS</abbr> files, but because of Postel’s Law, they can recover gracefully.</p>
+<p>Beaucoup de ces problèmes affectent également les fichier <abbr>HTML</abbr> et <abbr>CSS</abbr>  mais grâce à la Loi Postel, ils peuvent être récupérés sans accroc.</p>
 
-<p>This doesn’t mean that web designers shouldn’t use JavaScript. But it does mean that web designers shouldn’t <em>rely</em> on JavaScript when a simpler solution exists.</p>
+<p>Cela ne veut pas dire que les web designers ne devraient pas <em>compter</em> sur JavaScript quand une solution simple existe.</p>
 
 </section>
 
 <section aria-labelledby="platform">
 
-<h2 id="platform">Platform</h2>
+<h2 id="platform">Platforme</h2>
 
-<p>Web designers who ignored the message of John Allsopp’s <cite>A Dao of Web Design</cite> made the mistake of treating the web like print. The history of print has much to offer—hierarchy, typography, colour theory—but the web is a fundamentally different medium. The history of software development also has much to offer—architecture, testing, process—but again, the web remains its own medium.</p>
+<p>L’erreur des webdesigners ayant ignoré le message de John Allsopp dans son livre <cite>A Dao of Web Design</cite> fut de travailler le web comme on travaille en Print. L'histoire de l'imprimerie a beaucoup à offrir certes (hiérarchie, typographie, théorie des couleurs) mais le Web est un support fondamentalement différent. L’histoire du développement des logiciels est elle aussi très riche (architecture, tests, processus) mais ici encore, le Web reste un support à part entière.</p>
 
-<p>It’s tempting to apply the knowledge and learnings from another medium to the web. But it is more structurally honest to uncover the web’s own unique strengths and weaknesses.</p>
+<p>Bien qu’il puisse être tentant de transférer le savoir et les enseignements d’un autre média au Web, il est plus honnête intellectuellement de d’explorer les forces et faiblesses propres au web.</p>
 
-<p>The language we use can subtly influence our thinking. In his book <cite>Metaphors We Live By</cite>, George Lakoff highlights the dangers of political language. Obvious examples are “friendly fire” and “collateral damage”, but a more insidious example is “tax relief”—before a debate has even begun, taxation has been framed as something requiring relief.</p>
+<p>Le langage que nous utilisons peut influencer notre façon de penser. Dans son livre <cite>Metaphors We Live By</cite>,  George Lakoff souligne les dangers du langage politique. Les exemples évidents sont les “tirs amis” et les “dommages collatéraux”, un exemple plus trompeur encore est “l’allégement fiscal”. Avant qu’un débat ne commencée, la fiscalité a été conçue comme quelque chose nécessitant un allégement.</p>
 
-<p>On the face of it, the term “web platform” seems harmless. Describing the web as a platform puts it on par with other software environments. Flash was a platform. Android is a platform. i<abbr>OS</abbr> is a platform. But the web is not a platform. The whole point of the web is that it is <em>cross</em>‐platform.</p>
+<p>A première vue, le terme de “plateforme Web” semble inoffensif. Décrire le Web comme une plateforme le place au même niveau que les autres logiciels. Flash était une plateforme. Android est une plateforme. i<abbr>OS</abbr> est une plateforme. Mais le Web n’en est pas une. Tout l'intérêt du web réside dans le fait qu’il s’agit d’une plateforme <em>croisée</em></p>
 
-<p>A platform provides a controlled runtime environment for software. As long as the user has that runtime environment, you can be confident that they will get exactly what you’ve designed. If you build an i<abbr>OS</abbr> app and someone has an i<abbr>OS</abbr> device, you know that they will get 100% of your software. But if you build an i<abbr>OS</abbr> app and someone has an Android device, they will get 0% of your software. You can’t install an i<abbr>OS</abbr> app on an Android device. It’s all or nothing.</p>
+<p>Une plateforme offre un environnement d'exécution contrôlé pour les logiciels. Tant que l’utilisateur disposera de cet environnement d’exécution, vous pouvez être assuré qu’il obtiendra exactement ce que vous avez conçu. Si vous créez une application i<abbr>OS</abbr> et que quelqu’un possède un appareil i<abbr>OS</abbr> il obtiendra la totalité de votre logiciel. Mais si vous créez une application i<abbr>OS</abbr> et que quelqu’un a un appareil Android, il ne pourront pas y accéder. Vous ne pouvez pas installer une application i<abbr>OS</abbr> sur un appareil Android. C’est tout ou rien.</p>
 
-<p>The web isn’t as binary as that. If you build something using web technologies, and someone visits with a web browser, you can’t be sure how many of the web technologies will be supported. It probably won’t be 100%. But it’s also unlikely to be 0%. Some people will visit with i<abbr>OS</abbr> devices. Others will visit with Android devices. Some people will get 80% or 90% of what you’ve designed. Others will get just 20%, 30%, or 50%. The web isn’t a platform. It’s a continuum.</p>
+<p>Le Web n’est pas aussi binaire. Si vous créez quelque chose à l'aide de technologies Web et que quelqu'un visite avec un navigateur Web, vous ne pouvez pas savoir avec certitude combien de technologies Web seront prises en charge. Elles ne le seront probablement pas toutes prises en charge à 100%. Mais il est également peu probable qu’aucune ne soit prise en charge. Certaines personnes navigueront avec des appareils  i<abbr>OS</abbr>. D'autres utiliseront des appareils Android. Certaines personnes obtiendront 80% ou 90% de ce que vous avez conçu. Les autres ne recevront que 20%, 30% ou 50%. Le Web n'est pas une plateforme. C'est un continuum.</p>
 
-<p>Thinking of the web as a platform is a category error. A platform like Flash, i<abbr>OS</abbr>, or Android provides stability and certainty, but only under a very specific set of circumstances—your software must be accessed with the right platform‐specific runtime environment. The web provides no such certainty, but it also doesn’t restrict the possible runtime environments.</p>
+<p>Considérer le Web comme une plateforme,c’est le placer dans la mauvaise catégorie est une erreur de catégorie. Les plateformes telles que Flash, i<abbr>OS</abbr>,ou Android  garantissent une certaine stabilité et certitude, mais seulement si certaines conditions très spécifiques sont réunies: vous devez accéder à votre logiciel via la bonne plateforme et avec l’environnement d'exécution approprié avec l'environnement d'exécution spécifique à la plate-forme approprié. Certes, Le Web n'apporte pas cette certitude, mais il ne restreint pas non plus le nombre des environnements d'exécution possibles.</p>
 
-<p>Platforms are controlled and predictable. The World Wide Web is chaotic and unpredictable.</p>
+<p>Si les plateformes sont contrôlées et prévisibles, le World Wide Web est lui, chaotique et imprévisible.</p>
 
-<p>The web is a hot mess.</p>
+<p>En bref, le web est un beau bordel.</p>
 
 </section>
 
@@ -515,7 +515,7 @@ J’en suis désolé.</p>
 </main>
 
 <nav>
-<a href="../chapter5/amp.html" rel="next"><cite><span>Chapter 5:</span> Layers</cite></a>
+<a href="../chapter5/amp.html" rel="next"><cite><span>Chapitre 5:</span>Couches</cite></a>
 </nav>
 
 <amp-install-serviceworker src="../serviceworker.js" data-iframe-src="https://resilientwebdesign.com/iframe.html" layout="nodisplay">
